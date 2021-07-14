@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login Page </title>
+  <link href="css/clientlogin.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+
+    input[type="text"] {
+      margin-bottom: -20px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    input[type="password"] {
+     margin-bottom: 20px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class = "container">
+		<form action="client_login.php" method="post" name="Login_Form" class="form">       
+	    <h3 class="form-heading">Client Login</h3><hr><br>
+		  <label><b>CLIENT ID</b></label>
+			  <input type="text" class="form-control" name="id"><br>
+      <label><b>PASSWORD</b></label>
+        <input type="password" class="form-control" name="password"  />     		  
+      <label>
+        <input type="checkbox"  name="remember"> Remember me
+      </label><br>
+      <button class="loginbutton"><a href=tv.php>Login</a></button> 
+      <span class="password"><a href="password.html">Forgot password?</a></span>
+		</form>
+  </div>
+</body>
+</html>
